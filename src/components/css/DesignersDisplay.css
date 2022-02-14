@@ -1,0 +1,241 @@
+@keyframes fadeIn {
+    0% {
+      opacity:0
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  
+  
+
+.designers{
+    z-index: 5;
+    position: fixed;
+    height: fit-content;
+    max-height: 62.5vh;
+    margin-top: 60px;
+    margin-left: 18px;
+    width: 370px;
+    border-radius: 0 0 6px 6px;
+    animation:fadeIn 0.2s alternate;
+}
+
+.designers-search-div {
+    position: static;
+    margin-top: 4px;
+    background-color: white;
+    position: fixed;
+    width: 370px;
+    height: 50px;
+    border-radius: 6px;
+    display: flex;
+}
+
+.brand-display-search-icon{
+    position: static;
+    margin-left: 20px;
+    margin-top: 14px;
+    height: 22px;
+}
+
+.designers-search-input {
+    position: static;
+    border: none;
+    margin-left: 5px;
+    margin-top: 0;
+    width: 270px;
+
+    font-size: 16px;
+    font-family: Dia-Regular;
+    font-weight: thinner;
+
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    line-height: 48px;
+
+    text-transform: capitalize;
+}
+
+
+
+.designers-search-input::placeholder {
+    color: #cac8c8;
+    font-weight: 400;
+}
+
+.designers-ul-div{
+    height: fit-content;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: static;
+    border-radius: 6px;
+    background-color: white;
+    margin-top: 62px;
+    width: 370px;
+}
+
+.designers-ul {
+    position: static;
+    min-height: 60px;
+    height: fit-content;
+    max-height: 340px;
+    width: 300px;
+    border-radius: 6px;
+    overflow-x: scroll;
+    list-style-type: none;
+    overflow-x: hidden;
+    
+    --mask-image-content: linear-gradient(
+    to bottom,
+    transparent,
+    black var(--mask-height),
+    black calc(100% - var(--mask-height)),
+    transparent
+    
+  );
+
+  
+
+}
+
+
+
+.designers-li {
+    position: static;
+    font-weight: 400;
+    font-size: 15.5px;
+    font-family: Dia-Regular;
+    font-weight: thinner;
+
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    line-height: 35px;
+
+    margin-left: 10px;
+    
+}
+
+.designers-clear-all {
+    align-items: center;
+    line-height: 34px;
+
+    font-size: 14.5px;
+
+    text-align: center;
+
+    width: 320px;
+    border-radius: 8px;
+    margin: auto;
+    background-color: white;
+    width: 370px;
+    height: 34px;
+    margin-top: 8px;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 820px) {
+    .designers {
+        width: calc(100vw - 40px);
+        margin-left: 20px;
+        margin-top: 60px;
+        height: 37vh;
+        border-radius: 0;
+    }
+
+    .designers-search-div {
+        width: calc(100vw - 40px);
+        justify-content: center;
+    }
+    
+    .brand-display-search-icon{
+        position: static;
+        /* margin-left: calc(60vw - 20px - 130px); */
+        margin-top: 14px;
+        height: 22px;
+    }
+    
+    .designers-search-input {
+        position: static;
+        border: none;
+        margin-left: 5px;
+        margin-top: 0;
+        width: 160px;
+    
+        font-size: 16px;
+        font-family: Dia-Regular;
+        font-weight: thinner;
+    
+        -webkit-text-size-adjust: 100%;
+        -webkit-font-smoothing: antialiased;
+        line-height: 48px;
+    
+        text-transform: capitalize;
+    }
+
+    
+    .designers-ul-div{
+        width: calc(100vw - 40px);
+        margin-top: 60px;
+        height: calc(50vh - 10px);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius:  6px 6px 0 0;
+    }
+
+    .designers-ul {
+        margin-top: 10px;
+        width: calc(100vw - 40px);
+        overflow-x: scroll;
+        list-style-type: none;
+        overflow: hidden;
+        overflow-x: hidden;
+        padding: 0;
+        height: calc(50vh - 20px);
+        
+        
+    }
+
+    .designers-li {
+        font-weight: 400;
+        font-size: 14px;
+        font-family: Dia-Regular;
+        font-weight: thinner;
+        text-align: center;
+
+        -webkit-text-size-adjust: 100%;
+        -webkit-font-smoothing: antialiased;
+        line-height: 35px;
+
+        margin-left: 10px;
+    }
+
+    .designers-ul::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .designers-clear-all{
+        display: none;
+    }
+
+}
